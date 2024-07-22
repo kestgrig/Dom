@@ -1,0 +1,102 @@
+body,
+body * {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+        sans-serif;
+    background-color: rgb(125, 202, 58);
+    height: 100vh;
+}
+
+
+header {
+    display: flex;
+    gap: 450px;
+    justify-content: space-evenly;
+    padding: 2rem 2rem;
+}
+
+header > img {
+    width: 150px;
+    margin-left: -50px;
+
+}
+
+
+nav {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+nav > .link {
+    padding: 0.3rem 1rem;
+    text-decoration: none;
+    color: black;
+    border-bottom: 0.2rem solid transparent;
+
+}
+
+nav > .link:hover {
+    border-bottom-color: 0.2rem solid rgb(237, 195, 80);
+    
+}
+
+nav > .link.active {
+    background-color: rgb(237, 195, 80);
+    color: black;
+    border-radius: 8px;
+}
+
+main {
+    display: grid;
+    gap: 15px;
+    margin: 30px 30px;
+    grid-template-columns: 0.4fr 0.4fr 0.4fr 0.4fr ;
+    padding: 20px 30px;
+}
+
+article > img {
+    height: 250px;
+}
+
+article {
+    border: 1rem double rgb(118, 102, 11);
+    border-radius: 15px;
+    padding: 2rem 2rem;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(237, 195, 80);
+}
+
+.name {
+    font-size: 16px;
+    font-weight: 600;
+    padding-right: 80px;
+    background-color: aqua;
+}
+
+
+article > p:nth-child(2) {
+    font-size: 30px;
+    font-weight: 800;
+    font-style: italic;
+}
+
+article > a {
+    background-color: rgb(216, 176, 45);
+    padding: 0px 50px 0px 5px;
+    font-weight: 600;
+    font-size: 16px;
+    font-style: italic;
+    color: rgb(9, 5, 0);
+    border: 1px solid black;
+    border-radius: 4px;
+    text-decoration: none;
+}
